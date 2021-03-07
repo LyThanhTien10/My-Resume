@@ -396,7 +396,21 @@ html {
           content: "";
           width: 110%;
           height: 1rem;
-          background-color: var(--my-dark-green);
+          background-color: var(--my-dark-purple);
           border-radius: 0.5rem; }
       .container .col7 .wrap .item {
-        margin-top: 2rem; } }
+        margin-top: 2rem; }
+  .dark_mode .col7 .wrap .title::before {
+    content: none; }
+  .dark_mode .col7 .wrap .title::after {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 110%;
+    height: 1rem;
+    background-color: var(--my-dark-green);
+    border-radius: 0.5rem; }
+  .dark_mode .col7 .wrap .item {
+    margin-top: 2rem; } }

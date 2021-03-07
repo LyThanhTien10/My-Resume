@@ -479,7 +479,6 @@ html{
     }
 
     .col7{
-
         .wrap{
             .title{
                 color: var(--my-dark-green);
@@ -614,6 +613,34 @@ html{
                         margin-top: 0;
                     }
 
+                    &::before{
+                        content: none;
+                    }
+
+                    &::after{
+                        position: absolute;
+                        top: 110%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        content: "";
+                        width: 110%;
+                        height: 1rem;
+                        background-color: var(--my-dark-purple);
+                        border-radius: 0.5rem;
+                    }
+                }
+
+                .item{
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+
+    .dark_mode{
+        .col7{
+            .wrap{
+                .title{
                     &::before{
                         content: none;
                     }
